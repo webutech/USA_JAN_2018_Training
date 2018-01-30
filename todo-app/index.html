@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+   
+</head>
+<body>
+   
+    <table border="1">
+        <tr>
+            <td height="25px">
+                <h1 class="appTitle">Simple Todo-App using [Vanilla Js + HTML + CSS]</h1>
+            </td>
+        </tr>
+        <tr>
+            
+            <td height="400px" valign="top">
+                <div class="container">
+                <div>
+                    <button onclick="handlers.toggleAll()">Toggle All</button>
+                </div>
+                <br/>
+                <div>
+                    <input type="text" id="todoTextInput" placeholder="Enter todo">
+                    
+                    <button onclick="handlers.addTodo()">Add</button>
+                </div>
+                <br/>
+                
+                <div>
+                    <input type="number" id="todoChangePositionInput" placeholder="Enter Psition to Change">
+                    <input type="text" id="todoChangeTextInput" placeholder="Enter new Todo">
+                    
+                    <button onclick="handlers.changeTodo()">Change</button>
+                </div>
+                
+                <div id="sideInstruction">
+                   <p>Hover on todo or [X] button to get the help</p>
+                   <p>Click on todo or [X] button to change status or delete todo</p>
+                    
+                </div>
+                <br/>    
+                </div>
+                <hr/>
+                <ul>
+                
+                </ul>
+                
+            </td>
+            
+        </tr>
+        <tr>
+            <td height="20px">&reg; Developed by :  Pankaj Sharma</td>
+        </tr>
+    </table>
+     <script src="js/script.js"></script>
+</body>
+</html>

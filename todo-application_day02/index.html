@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo - application</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+   
+   <table border="1">
+       <tr>
+           <td height="25px"><h1>Todo- app</h1></td>
+       </tr>
+       <tr>
+           <td height="400px" valign="top">
+              <div>
+                <button onclick="handlers.toggleAll()">Toggle All</button>
+              </div><br>
+              <div>
+                  <input type="text" id="addTodoTextInput" placeholder="Enter Todo">
+                  <button onclick="handlers.addTodo()">Add</button>
+              </div>
+              <br/>
+              <div>
+                  <input type="number" id="changeTodoPositionInput" placeholder="Enter Postion">
+                  <input type="text" id="changeTodoTextInput" placeholder="Enter Todo">
+                  <button onclick="handlers.changeTodo()">Change</button>
+              </div>
+              <br/>
+              <div>
+                  <input type="number" id="deleteTodoPositionInput" placeholder="Enter Postion">
+                 <button onclick="handlers.deleteTodo()">Delete</button>
+              </div>
+              <br/>
+              <div>
+                  <input type="number" id="toggleTodoPositionInput" placeholder="Enter Postion">
+                 <button onclick="handlers.toggCompleteTodo()">Toggle</button>
+              </div>
+              <br/>
+              <ul>
+                                   
+              </ul>
+           </td>
+       </tr>
+       
+       <tr>
+           <td height="25px">Footer</td>
+       </tr>
+   </table>
+   
+   <script src="js/script.js"></script>
+    
+</body>
+</html>

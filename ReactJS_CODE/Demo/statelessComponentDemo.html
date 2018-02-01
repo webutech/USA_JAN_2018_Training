@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+</head>
+<body>
+   <div id="root"></div>
+   <script type="text/javascript" src="react.js"></script>
+   <script type="text/javascript" src="react-dom.js"></script>
+   <script src="babel.min.js"></script>
+   <script type="text/babel">
+      
+      const StateLessComponent=function(props){
+          return(
+              <h1>{props.msg}</h1>
+          );
+      }
+     
+      ReactDOM.render(<StateLessComponent msg='Demo of Stateless Component'/>,document.getElementById('root'));
+      
+       
+    
+   </script>
+    
+</body>
+</html>

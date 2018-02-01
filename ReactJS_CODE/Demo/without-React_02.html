@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+</head>
+<body>
+   <div id="root"></div>
+   <script type="text/javascript">
+       var dom={
+           whatToRender:'Hello World without React',
+           whereToRender:'root',
+           render:function(whatToRender,whereToRender){
+           document.getElementById(whereToRender).innerHTML=whatToRender;
+        }
+           
+       }       
+      
+       dom.render(dom.whatToRender,dom.whereToRender);
+       
+    
+   </script>
+    
+</body>
+</html>
